@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjeev Raj G — AI Engineer</title>
+  <meta name="description"
+    content="Sanjeev Raj G — AI Engineer, ML Researcher & Software Developer building intelligent systems for the future." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div class="loader" id="loader">
+    <canvas id="loaderCanvas"></canvas>
+    <div class="loader-content">
+      <div class="loader-name" id="loaderName">
+        <span class="loader-letter" data-char="S">S</span><span class="loader-letter" data-char="A">A</span><span
+          class="loader-letter" data-char="N">N</span><span class="loader-letter" data-char="J">J</span><span
+          class="loader-letter" data-char="E">E</span><span class="loader-letter" data-char="E">E</span><span
+          class="loader-letter" data-char="V">V</span>&nbsp;<span class="loader-letter" data-char="R">R</span><span
+          class="loader-letter" data-char="A">A</span><span class="loader-letter" data-char="J">J</span>&nbsp;<span
+          class="loader-letter" data-char="G">G</span>
+      </div>
+      <div class="loader-roles" id="loaderRoles">
+        <span class="loader-role active">AI Engineer</span>
+        <span class="loader-role">ML Researcher</span>
+        <span class="loader-role">Software Developer</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <div class="loader-percent" id="loaderPercent">0%</div>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#home">
+        <span class="nav-logo-mark">SRG</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="aurora"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-eyebrow reveal-up">
+          <span class="dot-pulse"></span>
+          Available for opportunities · Chennai, India
+        </div>
+        <h1 class="hero-name reveal-up" data-delay="0.1">
+          <span class="line-reveal">Sanjeev</span>
+          <span class="line-reveal">Raj G</span>
+        </h1>
+        <div class="hero-role-wrap reveal-up" data-delay="0.25">
+          <span class="hero-role-prefix">I build</span>
+          <div class="hero-role-slider">
+            <span class="hero-role-item active">AI Systems</span>
+            <span class="hero-role-item">ML Models</span>
+            <span class="hero-role-item">CV Pipelines</span>
+            <span class="hero-role-item">Full Stack Apps</span>
+            <span class="hero-role-item">Research Tools</span>
+          </div>
+        </div>
+        <p class="hero-subtitle reveal-up" data-delay="0.35">
+          Building Intelligent Systems for the Future.<br />
+          Final-year B.Tech in AI &amp; ML · Researcher · ML Engineer
+        </p>
+        <div class="hero-cta reveal-up" data-delay="0.45">
+          <a href="#projects" class="btn btn-primary magnetic">
+            <span>Explore Projects</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost magnetic">
+            <span>Get in touch</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right reveal-up" data-delay="0.3">
+        <div class="stats-card glass-card" id="statsCard">
+          <div class="stats-card-glow"></div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-value counter" data-target="7.98" data-decimal="2">0</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value"><span class="counter" data-target="6" data-suffix="+">0</span></span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value"><span class="counter" data-target="3">0</span></span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value"><span class="counter" data-target="2">0</span></span>
+              <span class="stat-label">Research Papers</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value"><span class="counter" data-target="6" data-suffix="+">0</span></span>
+              <span class="stat-label">Hackathons</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value"><span class="counter" data-target="10" data-suffix="+">0</span></span>
+              <span class="stat-label">Certificates</span>
+            </div>
+          </div>
+          <div class="stats-card-footer">
+            <span class="stats-status">
+              <span class="dot-pulse small"></span>
+              Open to internships &amp; research roles
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Who I am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-bio glass-card reveal-up">
+          <p>
+            Final-year B.Tech student specializing in <strong>Artificial Intelligence and Machine Learning</strong> with
+            hands-on experience across AI, Machine Learning, <strong>LLMS</strong>, Agentic workflow automations,
+            <strong>Cybersecurity</strong>, and <strong>Full Stack Development</strong>.
+          </p>
+          <p>
+            I'm passionate about building systems that bridge the gap between research and real-world impact — from
+            landslide prediction systems running on Raspberry Pi to automated vulnerability analyzers and material
+            science predictors.
+          </p>
+          <p>
+            I compete in hackathons, publish research, and build products that solve real problems.
+          </p>
+          <div class="about-tags">
+            <span class="tag">AI / ML</span>
+            <span class="tag">Neural Networks</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">LLMS</span>
+            <span class="tag">Prompt Engineering</span>
+            <span class="tag">MLOps</span>
+            <span class="tag">Cybersecurity</span>
+            <span class="tag">Agentic workflow automations</span>
+            <span class="tag">Full Stack</span>
+            <span class="tag">IoT</span>
+          </div>
+        </div>
+
+        <div class="about-timeline reveal-up" data-delay="0.15">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2023</div>
+            <div class="timeline-content glass-card small">
+              <h4>Started Engineering</h4>
+              <p>Enrolled in B.Tech AI &amp; ML at R.M.D Engineering College, Chennai.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content glass-card small">
+              <h4>Software Development & AI</h4>
+              <p>Deep-dived into AI , Machine Learning deep learning, Neural Network , Cybersecurity and Full Stack.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-year">2025</div>
+            <div class="timeline-content glass-card small">
+              <h4>Hackathons + Research</h4>
+              <p>Won 1st Prize in Hackathon and and collaborated with many researchers. Participanted in manu
+                activities and collaborated</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-year">2026</div>
+            <div class="timeline-content glass-card small">
+              <h4>Research + Internships</h4>
+              <p>Leading the redesign of Cryo Scientific Systems Website, B.U.G. club founder, targeting top-tier roles.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item future">
+            <div class="timeline-dot future"></div>
+            <div class="timeline-year">Future</div>
+            <div class="timeline-content glass-card small">
+              <h4>Building Intelligent Systems</h4>
+              <p>Graduate research, startup ventures, and AI products that matter.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section alt" id="education">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Academic background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="edu-card glass-card reveal-up">
+        <div class="edu-card-glow"></div>
+        <div class="edu-logo-wrap">
+          <div class="edu-logo">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="url(#eduGrad)" />
+              <path d="M20 8L32 14V22L20 28L8 22V14L20 8Z" stroke="#00F5A0" stroke-width="1.5" fill="none" />
+              <path d="M20 8V28M8 14l12 8 12-8" stroke="#00F5A0" stroke-width="1" opacity="0.5" />
+              <defs>
+                <linearGradient id="eduGrad" x1="0" y1="0" x2="40" y2="40">
+                  <stop stop-color="#0B1220" />
+                  <stop offset="1" stop-color="#0D1B30" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="edu-info">
+          <h3 class="edu-college">R.M.D Engineering College</h3>
+          <p class="edu-degree">B.Tech — Artificial Intelligence &amp; Machine Learning</p>
+          <p class="edu-meta">Chennai, Tamil Nadu · 2023 – 2027</p>
+        </div>
+        <div class="edu-cgpa">
+          <span class="cgpa-value">7.98</span>
+          <span class="cgpa-label">CGPA</span>
+        </div>
+      </div>
+
+      <div class="edu-card glass-card reveal-up" data-delay="0.1">
+        <div class="edu-card-glow"
+          style="background: radial-gradient(circle, rgba(59,130,246,0.06) 0%, transparent 70%);"></div>
+        <div class="edu-logo-wrap">
+          <div class="edu-logo">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="url(#eduGrad2)" />
+              <path d="M20 8L32 14V22L20 28L8 22V14L20 8Z" stroke="#3B82F6" stroke-width="1.5" fill="none" />
+              <path d="M20 8V28M8 14l12 8 12-8" stroke="#3B82F6" stroke-width="1" opacity="0.5" />
+              <defs>
+                <linearGradient id="eduGrad2" x1="0" y1="0" x2="40" y2="40">
+                  <stop stop-color="#0B1220" />
+                  <stop offset="1" stop-color="#0D1B30" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="edu-info">
+          <h3 class="edu-college">Everwin Matriculation Higher Secondary School</h3>
+          <p class="edu-degree">Class XII (HSC)</p>
+          <p class="edu-meta">Chennai, Tamil Nadu · Completed in 2023</p>
+        </div>
+        <div class="edu-cgpa">
+          <span class="cgpa-value" style="font-size: 2.1rem; color: #3B82F6;">86.16%</span>
+          <span class="cgpa-label">Score</span>
+        </div>
+      </div>
+
+      <div class="edu-card glass-card reveal-up" data-delay="0.2">
+        <div class="edu-card-glow"
+          style="background: radial-gradient(circle, rgba(124,58,237,0.06) 0%, transparent 70%);"></div>
+        <div class="edu-logo-wrap">
+          <div class="edu-logo">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect width="40" height="40" rx="10" fill="url(#eduGrad3)" />
+              <path d="M20 8L32 14V22L20 28L8 22V14L20 8Z" stroke="#7C3AED" stroke-width="1.5" fill="none" />
+              <path d="M20 8V28M8 14l12 8 12-8" stroke="#7C3AED" stroke-width="1" opacity="0.5" />
+              <defs>
+                <linearGradient id="eduGrad3" x1="0" y1="0" x2="40" y2="40">
+                  <stop stop-color="#0B1220" />
+                  <stop offset="1" stop-color="#0D1B30" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="edu-info">
+          <h3 class="edu-college">Doveton Boys and Girls Higher Secondary School</h3>
+          <p class="edu-degree">Class X (SSLC)</p>
+          <p class="edu-meta">Chennai, Tamil Nadu · Completed in 2021</p>
+        </div>
+        <div class="edu-cgpa">
+          <span class="cgpa-value" style="font-size: 2.1rem; color: #7C3AED;">83%</span>
+          <span class="cgpa-label">Score</span>
+        </div>
+      </div>
+
+
+      <div class="summary-card glass-card reveal-up" data-delay="0.15">
+        <span class="summary-eyebrow">Professional Summary</span>
+        <p class="summary-text">
+          Final-year B.Tech student specializing in <em>Artificial Intelligence and Machine Learning</em> with practical
+          experience in AI, Machine Learning, Computer Vision, Cybersecurity, and Full Stack Development. Passionate
+          about building intelligent systems that solve real-world challenges using modern technologies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Where I've worked</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="exp-timeline">
+        <div class="exp-item reveal-up" data-delay="0.0">
+          <div class="exp-connector">
+            <div class="exp-dot"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-card glass-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Software Developer Intern</h3>
+                <p class="exp-company">Cryo Scientific Systems Pvt. Ltd.</p>
+              </div>
+              <span class="exp-badge">2026</span>
+            </div>
+            <p class="exp-desc">Leading the company website redesign — building a premium, SaaS-inspired single-file
+              HTML/CSS/JS site with modern glassmorphism, aurora effects, and animated mesh grids.</p>
+            <div class="exp-tags">
+              <span class="tag small">Next.js</span>
+              <span class="tag small">Tailwind CSS</span>
+              <span class="tag small">Shadcn UI</span>
+              <span class="tag small">Framer Motion</span>
+              <span class="tag small">TypeScript</span>
+              <span class="tag small">UI/UX</span>
+              <span class="tag small">Animation</span>
+              <span class="tag small">Designing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal-up" data-delay="0.1">
+          <div class="exp-connector">
+            <div class="exp-dot"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-card glass-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Business Intelligence Intern</h3>
+                <p class="exp-company">Edinz Tech</p>
+              </div>
+              <span class="exp-badge">2025</span>
+            </div>
+            <p class="exp-desc">Built interactive Power BI dashboards to surface business insights from complex
+              datasets, enabling data-driven decision making across teams.</p>
+            <div class="exp-tags">
+              <span class="tag small">Power BI</span>
+              <span class="tag small">Data Analytics</span>
+              <span class="tag small">DAX</span>
+              <span class="tag small">Data Preprocessing</span>
+              <span class="tag small">EDA</span>
+              <span class="tag small">Data Visualization</span>
+              <span class="tag small">Reports and Dashboards</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal-up" data-delay="0.2">
+          <div class="exp-connector">
+            <div class="exp-dot"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-card glass-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Python Developer Intern</h3>
+                <p class="exp-company">CodSoft</p>
+              </div>
+              <span class="exp-badge">2024</span>
+            </div>
+            <p class="exp-desc">Developed Python-based automation and data processing scripts, strengthening backend
+              development skills and Python ecosystem proficiency.</p>
+            <div class="exp-tags">
+              <span class="tag small">Python Fundamentals</span>
+              <span class="tag small">Built-in Libraries</span>
+              <span class="tag small">REST APIs</span>
+              <span class="tag small">FastAPI & Flask Framework</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal-up" data-delay="0.3">
+          <div class="exp-connector">
+            <div class="exp-dot"></div>
+          </div>
+          <div class="exp-card glass-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Security Intern</h3>
+                <p class="exp-company">Prodigy Infotech</p>
+              </div>
+              <span class="exp-badge">2024</span>
+            </div>
+            <p class="exp-desc">Worked on cybersecurity tooling, vulnerability assessment workflows, and network
+              security analysis — laying the groundwork for SecureScanX.</p>
+            <div class="exp-tags">
+              <span class="tag small">Cybersecurity</span>
+              <span class="tag small">Nmap</span>
+              <span class="tag small">CVE Analysis</span>
+              <span class="tag small">Computer Networks</span>
+              <span class="tag small">Cryptography</span>
+              <span class="tag small">Vulnerability Assessment</span>
+              <span class="tag small">Penetration Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section alt" id="projects">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">What I've built</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <!-- RescueGPT -->
+      <div class="project-card glass-card reveal-up" id="proj1">
+        <div class="project-card-glow glow-green"></div>
+        <div class="project-index">01</div>
+        <div class="project-layout">
+          <div class="project-info">
+            <h3 class="project-name">RescueGPT</h3>
+            <p class="project-tagline">AI Powered Landslide Detection &amp; Early Warning System</p>
+            <div class="project-tabs">
+              <button class="ptab active" data-target="p1-overview">Overview</button>
+              <button class="ptab" data-target="p1-features">Features</button>
+              <button class="ptab" data-target="p1-arch">Architecture</button>
+            </div>
+            <div class="ptab-content active" id="p1-overview">
+              <p>An end-to-end AI system for real-time landslide detection using SAR satellite imagery and deep
+                learning. Deployed on Raspberry Pi 4 for edge inference — enabling disaster prediction in
+                connectivity-limited mountain regions.</p>
+            </div>
+            <div class="ptab-content" id="p1-features">
+              <ul class="feature-list">
+                <li>Real-time SAR imagery segmentation via DeepLabV3+</li>
+                <li>Early warning alert system via IoT sensor fusion</li>
+                <li>Edge AI deployment on Raspberry Pi 4 (offline-capable)</li>
+                <li>ResNet50 backbone with custom fine-tuning</li>
+                <li>Google Colab training pipeline with automated exports</li>
+              </ul>
+            </div>
+            <div class="ptab-content" id="p1-arch">
+              <div class="arch-diagram">
+                <div class="arch-node">SAR Satellite</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node highlight">DeepLabV3+</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node">ResNet50</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node">Edge AI (RPi)</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node highlight">Alert System</div>
+              </div>
+            </div>
+            <div class="project-stack">
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">TensorFlow</span>
+              <span class="stack-pill">DeepLabV3+</span>
+              <span class="stack-pill">ResNet50</span>
+              <span class="stack-pill">SAR Imagery</span>
+              <span class="stack-pill">IoT</span>
+              <span class="stack-pill">Raspberry Pi</span>
+              <span class="stack-pill">Google Colab</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Sanjeev23Raj/Landslide"
+                class="btn btn-primary small magnetic"><span>GitHub</span></a>
+              <span class="project-badge research">IEEE Manuscript</span>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-mockup green">
+              <div class="mockup-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-map">
+                  <div class="map-grid"></div>
+                  <div class="map-hotspot" style="top:35%;left:42%"><span class="pulse-ring"></span></div>
+                  <div class="map-hotspot danger" style="top:55%;left:61%"><span class="pulse-ring"></span></div>
+                  <div class="map-label" style="top:10%;left:10%">SAR Analysis</div>
+                  <div class="map-stat">Risk: <span style="color:#00F5A0">HIGH</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SecureScanX -->
+      <div class="project-card glass-card reveal-up" data-delay="0.1" id="proj2">
+        <div class="project-card-glow glow-blue"></div>
+        <div class="project-index">02</div>
+        <div class="project-layout reverse">
+          <div class="project-info">
+            <h3 class="project-name">SecureScanX</h3>
+            <p class="project-tagline">Automated Infrastructure Risk Analyzer</p>
+            <div class="project-tabs">
+              <button class="ptab active" data-target="p2-overview">Overview</button>
+              <button class="ptab" data-target="p2-features">Features</button>
+              <button class="ptab" data-target="p2-arch">Architecture</button>
+            </div>
+            <div class="ptab-content active" id="p2-overview">
+              <p>A CVSS-based vulnerability analyzer that automates infrastructure risk scoring by correlating CVE/NVD
+                data with live Nmap scans. Delivers actionable security reports with severity rankings and remediation
+                guidance.</p>
+            </div>
+            <div class="ptab-content" id="p2-features">
+              <ul class="feature-list">
+                <li>Automated Nmap scan orchestration and parsing</li>
+                <li>Real-time CVE correlation via NVD API</li>
+                <li>CVSS v3.1 risk scoring with severity classification</li>
+                <li>FastAPI backend with REST endpoints</li>
+                <li>Exportable PDF/JSON security reports</li>
+              </ul>
+            </div>
+            <div class="ptab-content" id="p2-arch">
+              <div class="arch-diagram">
+                <div class="arch-node">Nmap Scan</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node highlight">CVE/NVD API</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node">CVSS Engine</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node highlight">FastAPI</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node">Risk Report</div>
+              </div>
+            </div>
+            <div class="project-stack">
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">FastAPI</span>
+              <span class="stack-pill">Nmap</span>
+              <span class="stack-pill">CVE/NVD</span>
+              <span class="stack-pill">CVSS</span>
+              <span class="stack-pill">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Sanjeev23Raj/vulnerability-check"
+                class="btn btn-primary small magneti c"><span>GitHub</span></a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-mockup blue">
+              <div class="mockup-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mockup-body scan">
+                <div class="scan-line"></div>
+                <div class="scan-result">CVE-2024-1234 <span class="severity high">HIGH 8.1</span></div>
+                <div class="scan-result">CVE-2024-5678 <span class="severity med">MED 5.3</span></div>
+                <div class="scan-result">CVE-2024-9012 <span class="severity low">LOW 2.1</span></div>
+                <div class="scan-result">CVE-2024-3456 <span class="severity high">CRIT 9.8</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MatX -->
+      <div class="project-card glass-card reveal-up" data-delay="0.2" id="proj3">
+        <div class="project-card-glow glow-purple"></div>
+        <div class="project-index">03</div>
+        <div class="project-layout">
+          <div class="project-info">
+            <h3 class="project-name">MatX</h3>
+            <p class="project-tagline">AI Material Overload Predictor &amp; Visualizer</p>
+            <div class="project-tabs">
+              <button class="ptab active" data-target="p3-overview">Overview</button>
+              <button class="ptab" data-target="p3-features">Features</button>
+              <button class="ptab" data-target="p3-arch">Architecture</button>
+            </div>
+            <div class="ptab-content active" id="p3-overview">
+              <p>An AI-powered materials science platform that predicts structural overload conditions for engineering
+                materials using ML models trained on stress-strain datasets — with real-time interactive visualizations.
+              </p>
+            </div>
+            <div class="ptab-content" id="p3-features">
+              <ul class="feature-list">
+                <li>Multi-material stress-strain ML prediction pipeline</li>
+                <li>Interactive 3D visualization of material deformation</li>
+                <li>Overload threshold classification with confidence scores</li>
+                <li>Springer manuscript in progress</li>
+                <li>Supports 50+ material types from training dataset</li>
+              </ul>
+            </div>
+            <div class="ptab-content" id="p3-arch">
+              <div class="arch-diagram">
+                <div class="arch-node">Material Input</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node highlight">Scikit-Learn</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node">PyTorch Model</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node highlight">Prediction</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node">Visualizer</div>
+              </div>
+            </div>
+            <div class="project-stack">
+              <span class="stack-pill">Python</span>
+              <span class="stack-pill">PyTorch</span>
+              <span class="stack-pill">Scikit-Learn</span>
+              <span class="stack-pill">NumPy</span>
+              <span class="stack-pill">Pandas</span>
+              <span class="stack-pill">Matplotlib</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Sanjeev23Raj/Matx"
+                class="btn btn-primary small magnetic"><span>GitHub</span></a>
+              <span class="project-badge research">Springer Manuscript</span>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-mockup purple">
+              <div class="mockup-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mockup-body chart">
+                <div class="chart-bars">
+                  <div class="chart-bar" style="--h:60%;--c:#7C3AED">Steel</div>
+                  <div class="chart-bar" style="--h:82%;--c:#7C3AED99">Aluminum</div>
+                  <div class="chart-bar danger" style="--h:98%;--c:#EF4444">Carbon</div>
+                  <div class="chart-bar" style="--h:45%;--c:#7C3AED">Titanium</div>
+                  <div class="chart-bar" style="--h:71%;--c:#7C3AED99">Copper</div>
+                </div>
+                <div class="chart-label">Overload Risk →</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Smart Park -->
+      <div class="project-card glass-card reveal-up" data-delay="0.3" id="proj4">
+        <div class="project-card-glow glow-blue"></div>
+        <div class="project-index">04</div>
+        <div class="project-layout reverse">
+          <div class="project-info">
+            <h3 class="project-name">Smart Park</h3>
+            <p class="project-tagline">Parking Lot Management System with Custom Swing UI</p>
+            <div class="project-tabs">
+              <button class="ptab active" data-target="p4-overview">Overview</button>
+              <button class="ptab" data-target="p4-features">Features</button>
+              <button class="ptab" data-target="p4-arch">Architecture</button>
+            </div>
+            <div class="ptab-content active" id="p4-overview">
+              <p>A sophisticated yet easy-to-use desktop application for parking lot management. Built with Java and a
+                custom-styled, modern Java Swing UI, it handles secure slot allocation, dynamic fee calculations, and
+                real-time occupancy status.</p>
+            </div>
+            <div class="ptab-content" id="p4-features">
+              <ul class="feature-list">
+                <li><strong>Intelligent Allocation</strong>: Automatically assigns slot sizes based on vehicle type
+                  (Bike, Car, Truck)</li>
+                <li><strong>Dynamic Fee Structure</strong>: Computes per-hour rates based on duration (Bike: ₹10, Car:
+                  ₹20, Truck: ₹40)</li>
+                <li><strong>Live Dashboard</strong>: Real-time visual monitoring of 30 predefined parking spots (10
+                  Small, 10 Medium, 10 Large)</li>
+                <li><strong>Search Engine</strong>: Instant lookup of parked vehicles by plate number</li>
+              </ul>
+            </div>
+            <div class="ptab-content" id="p4-arch">
+              <div class="arch-diagram">
+                <div class="arch-node">Main (Entry)</div>
+                <div class="arch-arrow">→</div>
+                <div class="arch-node highlight">Swing Dashboard</div>
+                <div class="arch-arrow">⇄</div>
+                <div class="arch-node">Parking Controller</div>
+                <div class="arch-arrow">⇄</div>
+                <div class="arch-node highlight">Parking Service</div>
+              </div>
+            </div>
+            <div class="project-stack" style="margin-top:1.5rem;">
+              <span class="stack-pill">Java (JDK 8+)</span>
+              <span class="stack-pill">Java Swing UI</span>
+              <span class="stack-pill">MVC Pattern</span>
+              <span class="stack-pill">Java Collections</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Sanjeev23Raj/PARKING-MANAGEMENT-SYSTEM"
+                class="btn btn-primary small magnetic"><span>GitHub</span></a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="project-mockup blue">
+              <div class="mockup-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mockup-body graph-viz">
+                <svg viewBox="0 0 200 130" width="100%" height="100%">
+                  <!-- Parking grid lines -->
+                  <line x1="20" y1="20" x2="180" y2="20" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
+                  <line x1="20" y1="110" x2="180" y2="110" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
+
+                  <!-- Slot dividers -->
+                  <line x1="60" y1="20" x2="60" y2="60" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3,3" />
+                  <line x1="100" y1="20" x2="100" y2="60" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3,3" />
+                  <line x1="140" y1="20" x2="140" y2="60" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3,3" />
+
+                  <!-- Occupied spots -->
+                  <rect x="25" y="25" width="30" height="25" rx="4" fill="#EF444420" stroke="#EF4444"
+                    stroke-width="1.5" />
+                  <text x="32" y="41" font-size="8" fill="#EF4444" font-family="JetBrains Mono"
+                    font-weight="bold">OCC</text>
+
+                  <rect x="65" y="25" width="30" height="25" rx="4" fill="#EF444420" stroke="#EF4444"
+                    stroke-width="1.5" />
+                  <text x="72" y="41" font-size="8" fill="#EF4444" font-family="JetBrains Mono"
+                    font-weight="bold">OCC</text>
+
+                  <!-- Available spot -->
+                  <rect x="105" y="25" width="30" height="25" rx="4" fill="#00F5A015" stroke="#00F5A0"
+                    stroke-width="1.5" stroke-dasharray="2,2" />
+                  <circle cx="120" cy="37" r="3" fill="#00F5A0" />
+                  <text x="110" y="46" font-size="6" fill="#00F5A0" font-family="JetBrains Mono">FREE</text>
+
+                  <rect x="145" y="25" width="30" height="25" rx="4" fill="#EF444420" stroke="#EF4444"
+                    stroke-width="1.5" />
+                  <text x="152" y="41" font-size="8" fill="#EF4444" font-family="JetBrains Mono"
+                    font-weight="bold">OCC</text>
+
+                  <!-- Entry Barrier & Text -->
+                  <path d="M 30,95 L 80,80" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" />
+                  <circle cx="30" cy="95" r="5" fill="#3B82F6" />
+                  <text x="90" y="98" font-size="9" fill="#F8FAFC" font-family="JetBrains Mono">GATE OPEN</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== RESEARCH ========== -->
+  <section class="section" id="research">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Academic contributions</span>
+        <h2 class="section-title">Research</h2>
+      </div>
+
+      <div class="research-grid">
+        <div class="research-card glass-card reveal-up">
+          <div class="research-card-glow"></div>
+          <div class="research-status">
+            <span class="status-dot"></span>
+            IEEE Manuscript · In Progress
+          </div>
+          <h3 class="research-title">RescueGPT: Deep Learning for Landslide Detection via SAR Imagery</h3>
+          <p class="research-abstract">Proposes an end-to-end pipeline combining DeepLabV3+ semantic segmentation with
+            ResNet50 on synthetic aperture radar imagery for early landslide detection, with edge AI deployment on
+            Raspberry Pi for real-time field alerts.</p>
+          <div class="research-topics">
+            <span class="topic-pill">DeepLabV3+</span>
+            <span class="topic-pill">SAR Imagery</span>
+            <span class="topic-pill">ResNet50</span>
+            <span class="topic-pill">Edge AI</span>
+            <span class="topic-pill">IoT</span>
+            <span class="topic-pill">Raspberry Pi</span>
+          </div>
+        </div>
+
+        <div class="research-card glass-card reveal-up" data-delay="0.15">
+          <div class="research-card-glow purple"></div>
+          <div class="research-status purple">
+            <span class="status-dot purple"></span>
+            Springer Manuscript · In Progress
+          </div>
+          <h3 class="research-title">MatX: Machine Learning for Material Overload Prediction in Structural Engineering
+          </h3>
+          <p class="research-abstract">A novel ML framework for predicting overload failure in engineering materials,
+            trained on stress-strain curve datasets with multi-class severity output and an interactive 3D visualizer
+            for material deformation mapping.</p>
+          <div class="research-topics">
+            <span class="topic-pill">Materials Science</span>
+            <span class="topic-pill">PyTorch</span>
+            <span class="topic-pill">Stress-Strain Analysis</span>
+            <span class="topic-pill">3D Visualization</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Workflow -->
+      <div class="workflow reveal-up" data-delay="0.2">
+        <h3 class="workflow-title">Research Workflow</h3>
+        <div class="workflow-steps">
+          <div class="wf-step">
+            <div class="wf-icon">🔬</div>
+            <div class="wf-label">Problem Identification</div>
+          </div>
+          <div class="wf-arrow">→</div>
+          <div class="wf-step">
+            <div class="wf-icon">📊</div>
+            <div class="wf-label">Data Collection</div>
+          </div>
+          <div class="wf-arrow">→</div>
+          <div class="wf-step">
+            <div class="wf-icon">🧠</div>
+            <div class="wf-label">Model Design</div>
+          </div>
+          <div class="wf-arrow">→</div>
+          <div class="wf-step">
+            <div class="wf-icon">⚡</div>
+            <div class="wf-label">Training &amp; Eval</div>
+          </div>
+          <div class="wf-arrow">→</div>
+          <div class="wf-step">
+            <div class="wf-icon">🚀</div>
+            <div class="wf-label">Deployment</div>
+          </div>
+          <div class="wf-arrow">→</div>
+          <div class="wf-step active">
+            <div class="wf-icon">📝</div>
+            <div class="wf-label">Publication</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section alt" id="skills">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Tools &amp; technologies</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills-layout">
+        <div class="skill-group reveal-up">
+          <h4 class="skill-group-label">Languages</h4>
+          <div class="skill-pills">
+            <span class="skill-pill glow-green">Python</span>
+            <span class="skill-pill glow-green">Java</span>
+            <span class="skill-pill glow-blue">JavaScript</span>
+            <span class="skill-pill">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group reveal-up" data-delay="0.05">
+          <h4 class="skill-group-label">AI / ML</h4>
+          <div class="skill-pills">
+            <span class="skill-pill glow-purple">Machine Learning</span>
+            <span class="skill-pill glow-purple">Deep Learning</span>
+            <span class="skill-pill glow-purple">Neural Networks</span>
+            <span class="skill-pill glow-purple">TensorFlow</span>
+            <span class="skill-pill glow-purple">PyTorch</span>
+            <span class="skill-pill glow-purple">Scikit-Learn</span>
+            <span class="skill-pill glow-purple">Keras</span>
+          </div>
+        </div>
+        <div class="skill-group reveal-up" data-delay="0.1">
+          <h4 class="skill-group-label">Frameworks</h4>
+          <div class="skill-pills">
+            <span class="skill-pill glow-blue">FastAPI</span>
+            <span class="skill-pill glow-blue">React</span>
+            <span class="skill-pill glow-blue">Node.js</span>
+          </div>
+        </div>
+        <div class="skill-group reveal-up" data-delay="0.15">
+          <h4 class="skill-group-label">Libraries</h4>
+          <div class="skill-pills">
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">OpenCV</span>
+            <span class="skill-pill">Matplotlib</span>
+            <span class="skill-pill">Tkinter</span>
+          </div>
+        </div>
+        <div class="skill-group reveal-up" data-delay="0.2">
+          <h4 class="skill-group-label">Databases</h4>
+          <div class="skill-pills">
+            <span class="skill-pill glow-green">MySQL</span>
+            <span class="skill-pill glow-green">MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-group reveal-up" data-delay="0.25">
+          <h4 class="skill-group-label">Tools</h4>
+          <div class="skill-pills">
+            <span class="skill-pill">Git / GitHub</span>
+            <span class="skill-pill">Jupyter</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">Google Colab</span>
+            <span class="skill-pill">Power BI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LEADERSHIP ========== -->
+  <section class="section" id="leadership">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Impact beyond code</span>
+        <h2 class="section-title">Leadership</h2>
+      </div>
+      <div class="lead-grid">
+        <div class="lead-card glass-card reveal-up">
+          <div class="lead-icon">🦄</div>
+          <h3>Founder — B.U.G.</h3>
+          <p class="lead-subtitle">Build Your Genie</p>
+          <p class="lead-desc">Founded and lead a college tech club focused on AI, ML, and product development.
+            Organizing workshops, hackathon prep sessions, and project showcases for the next generation of builders.
+          </p>
+        </div>
+        <div class="lead-card glass-card reveal-up" data-delay="0.1">
+          <div class="lead-icon">🎓</div>
+          <h3>Class Representative</h3>
+          <p class="lead-subtitle">AI &amp; ML Department</p>
+          <p class="lead-desc">Serving as the elected voice for the AI &amp; ML department cohort — coordinating
+            academics, events, and student-faculty communications throughout the degree programme.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section class="section alt" id="achievements">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Competitions &amp; recognition</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+
+      <div class="marquee-wrap reveal-up">
+        <div class="marquee">
+          <div class="marquee-track">
+            <span class="marquee-item">🏆 Hackathon 3.0 Winner — SRMS, 2025</span>
+            <span class="marquee-item">🥇 Top 4 — MIT Chennai Hackathon, 2025</span>
+            <span class="marquee-item">⚡ 3rd Prize Overall Coding Competition, 2024</span>
+            <span class="marquee-item">🤖 EY Hackathon 5.0 Participant, 2025</span>
+            <span class="marquee-item">💡 TechnoVIT Finalist, 2024</span>
+            <span class="marquee-item">💡 Adobe Hackathon Participant, 2025</span>
+            <span class="marquee-item">🚀 RUSA Startup Cafe — Top 10, 2024</span>
+            <span class="marquee-item">🚀 Amazon ML Challenge Participant, 2025</span>
+            <span class="marquee-item">📊 Baap ka Prashadh 5.0 Participant, 2025</span>
+            <span class="marquee-item">🏆 Project Expo Winner (College Level), 2026</span>
+            <span class="marquee-item">⚡ Technoverse-Cognizant Participant, 2026</span>
+            <span class="marquee-item">🤖 Luma AI - Hackathon Participant, 2026</span>
+            <!-- Repeat for seamless loop -->
+            <span class="marquee-item">🏆 Hackathon 3.0 Winner — SRMS, 2025</span>
+            <span class="marquee-item">🥇 Top 4 — MIT Chennai Hackathon, 2025</span>
+            <span class="marquee-item">⚡ 3rd Prize Overall Coding Competition, 2024</span>
+            <span class="marquee-item">🤖 EY Hackathon 5.0 Participant, 2025</span>
+            <span class="marquee-item">💡 TechnoVIT Finalist, 2024</span>
+            <span class="marquee-item">💡 Adobe Hackathon Participant, 2025</span>
+            <span class="marquee-item">🚀 RUSA Startup Cafe — Top 10, 2024</span>
+            <span class="marquee-item">🚀 Amazon ML Challenge Participant, 2025</span>
+            <span class="marquee-item">📊 Baap ka Prashadh 5.0 Participant, 2025</span>
+            <span class="marquee-item">🏆 Project Expo Winner (College Level), 2026</span>
+            <span class="marquee-item">⚡ Technoverse-Cognizant Participant, 2026</span>
+            <span class="marquee-item">🤖 Luma AI - Hackathon Participant, 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="achieve-grid">
+        <div class="achieve-card glass-card reveal-up">
+          <div class="achieve-icon">🏆</div>
+          <h4>Hackathon 3.0 Winner</h4>
+          <p>SRMS — 1st Place 2025</p>
+        </div>
+        <div class="achieve-card glass-card reveal-up" data-delay="0.05">
+          <div class="achieve-icon">🥇</div>
+          <h4>MIT Chennai</h4>
+          <p>Top 4 placement 2025</p>
+        </div>
+        <div class="achieve-card glass-card reveal-up" data-delay="0.1">
+          <div class="achieve-icon">⚡</div>
+          <h4>3rd Prize Overall</h4>
+          <p>Coding competition 2024</p>
+        </div>
+        <div class="achieve-card glass-card reveal-up" data-delay="0.15">
+          <div class="achieve-icon">🤖</div>
+          <h4>EY Hackathon 5.0</h4>
+          <p>Hackathon participant 2025</p>
+        </div>
+        <div class="achieve-card glass-card reveal-up" data-delay="0.2">
+          <div class="achieve-icon">💡</div>
+          <h4>TechnoVIT</h4>
+          <p>Finalist 2024</p>
+        </div>
+        <div class="achieve-card glass-card reveal-up" data-delay="0.25">
+          <div class="achieve-icon">🚀</div>
+          <h4>RUSA Startup Cafe </h4>
+          <p>Top 10 2024</p>
+        </div>
+        <div class="achieve-card glass-card reveal-up" data-delay="0.25">
+          <div class="achieve-icon">🚀</div>
+          <h4>Amazon ML Challenge</h4>
+          <p>Participant 2025</p>
+        </div>
+        <div class="achieve-card glass-card reveal-up" data-delay="0.25">
+          <div class="achieve-icon">🚀</div>
+          <h4> Baap ka Prashadh 5.0</h4>
+          <p>Participant 2025</p>
+        </div>
+        <div class="achieve-card glass-card reveal-up" data-delay="0.25">
+          <div class="achieve-icon">🚀</div>
+          <h4>Winner-College Level</h4>
+          <p>Project Expo 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="section" id="certifications">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Verified credentials</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <div class="cert-grid">
+        <!-- Microsoft -->
+        <div class="cert-card glass-card reveal-up">
+          <div class="cert-logo microsoft">MS</div>
+          <div class="cert-info">
+            <h4>SQL AI Developer Associate</h4>
+            <p>Microsoft</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" data-delay="0.05">
+          <div class="cert-logo microsoft">MS</div>
+          <div class="cert-info">
+            <h4>Azure Developer Associate</h4>
+            <p>Microsoft</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+
+        <!-- Oracle -->
+        <div class="cert-card glass-card reveal-up" data-delay="0.1">
+          <div class="cert-logo oracle">OR</div>
+          <div class="cert-info">
+            <h4>Data Science</h4>
+            <p>Oracle</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" data-delay="0.15">
+          <div class="cert-logo oracle">OR</div>
+          <div class="cert-info">
+            <h4>Gen AI</h4>
+            <p>Oracle</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" data-delay="0.2">
+          <div class="cert-logo oracle">OR</div>
+          <div class="cert-info">
+            <h4>APEX Cloud Developer</h4>
+            <p>Oracle</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+
+        <!-- MongoDB -->
+        <div class="cert-card glass-card reveal-up" data-delay="0.25">
+          <div class="cert-logo mongodb">M</div>
+          <div class="cert-info">
+            <h4>Atlas</h4>
+            <p>MongoDB</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" data-delay="0.25">
+          <div class="cert-logo mongodb">M</div>
+          <div class="cert-info">
+            <h4>GenAI</h4>
+            <p>MongoDB</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+
+        <!-- Infosys -->
+        <div class="cert-card glass-card reveal-up" data-delay="0.25">
+          <div class="cert-logo infosys">INF</div>
+          <div class="cert-info">
+            <h4>DBMS</h4>
+            <p>Infosys</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" data-delay="0.25">
+          <div class="cert-logo infosys">INF</div>
+          <div class="cert-info">
+            <h4>Python</h4>
+            <p>Infosys</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" data-delay="0.25">
+          <div class="cert-logo infosys">INF</div>
+          <div class="cert-info">
+            <h4>Java</h4>
+            <p>Infosys</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+
+        <!-- HackerRank -->
+        <div class="cert-card glass-card reveal-up" data-delay="0.25">
+          <div class="cert-logo hackerrank">HR</div>
+          <div class="cert-info">
+            <h4>SQL</h4>
+            <p>HackerRank</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" data-delay="0.25">
+          <div class="cert-logo hackerrank">HR</div>
+          <div class="cert-info">
+            <h4>Python</h4>
+            <p>HackerRank</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+
+        <!-- Coursera -->
+        <div class="cert-card glass-card reveal-up" data-delay="0.25">
+          <div class="cert-logo coursera">C</div>
+          <div class="cert-info">
+            <h4>Web Design</h4>
+            <p>Coursera</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+        <div class="cert-card glass-card reveal-up" data-delay="0.25">
+          <div class="cert-logo coursera">C</div>
+          <div class="cert-info">
+            <h4>Excel Foundation</h4>
+            <p>Coursera</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+
+        <!-- KNIME -->
+        <div class="cert-card glass-card reveal-up" data-delay="0.25">
+          <div class="cert-logo knime">KN</div>
+          <div class="cert-info">
+            <h4>Data Analytics (L1)</h4>
+            <p>KNIME</p>
+            <span class="cert-badge verified">Verified</span>
+          </div>
+        </div>
+      </div>
+      <p class="cert-note reveal-up" data-delay="0.3">20+ additional certifications across AI, ML, cybersecurity, and
+        cloud platforms.</p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section alt" id="contact">
+    <div class="section-inner">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Let's collaborate</span>
+        <h2 class="section-title">Get in Touch</h2>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info reveal-up">
+          <p class="contact-intro">Whether you're looking to collaborate on research, build something impactful, or
+            discuss an internship opportunity — I'd love to hear from you.</p>
+
+          <div class="contact-links">
+            <a href="mailto:sr2249294@gmail.com" class="contact-link">
+              <div class="contact-link-icon">✉</div>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">sr2249294@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+91XXXXXXXXXX" class="contact-link">
+              <div class="contact-link-icon">📱</div>
+              <div>
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-value">+91 8825752798</span>
+              </div>
+            </a>
+            <a href="https://github.com/Sanjeev23Raj" target="_blank" class="contact-link">
+              <div class="contact-link-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4 11.5 11.5 0 013 .4c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </div>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/sanjeevrajg</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/sanjeevrajg2312/" target="_blank" class="contact-link">
+              <div class="contact-link-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM3.56 20.45h3.56V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z" />
+                </svg>
+              </div>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/sanjeevrajg</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-up" data-delay="0.15">
+          <div class="contact-form glass-card">
+            <h3 class="form-title">Send a Message</h3>
+            <div class="form-group">
+              <input type="text" class="form-input" id="formName" placeholder=" " autocomplete="off" />
+              <label class="form-label" for="formName">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-input" id="formEmail" placeholder=" " autocomplete="off" />
+              <label class="form-label" for="formEmail">Email Address</label>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-input" id="formSubject" placeholder=" " autocomplete="off" />
+              <label class="form-label" for="formSubject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea class="form-input form-textarea" id="formMessage" placeholder=" " rows="4"></textarea>
+              <label class="form-label" for="formMessage">Message</label>
+            </div>
+            <button class="btn btn-primary full magnetic" id="formSubmit" onclick="handleFormSubmit(event)">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <span>✓</span> Message sent! I'll get back to you soon.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <canvas id="footerCanvas"></canvas>
+    <div class="footer-inner">
+      <div class="footer-logo">SRG</div>
+      <blockquote class="footer-quote">
+        "Building Intelligent Systems that create real-world impact."
+      </blockquote>
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Sanjeev Raj G · Made with precision &amp; purpose</p>
+    </div>
+  </footer>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
