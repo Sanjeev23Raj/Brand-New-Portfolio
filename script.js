@@ -403,7 +403,7 @@ function handleFormSubmit(e) {
     Username: "sr2249294@gmail.com",
     Password: "hwqu rzkb sobs ypih", // Gmail App Password
     To: "sr2249294@gmail.com",
-    From: "[EMAIL_ADDRESS]",
+    From: "sr2249294@gmail.com",
     ReplyTo: email,
     Subject: `Portfolio Contact: ${subject}`,
     Body: `<strong>Name:</strong> ${name}<br><strong>Email:</strong> ${email}<br><br><strong>Message:</strong><br>${message}`
